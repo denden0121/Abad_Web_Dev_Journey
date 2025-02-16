@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio</title>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#aboutSection"><img src="images/about.svg" alt="about">About Me</a></li>
+                <li><a href="#projectSection"><img src="images/project.svg" alt="">Projects</a></li>
+                <li><a href="#contactSection"><img src="images/contact.svg" alt="">Contact</a></li>
+            </ul>
+        </nav>
+        <h1> Welcome to My Portfoli<img src="images/test1.png" alt="logo"></h1>
+    </header>
+
+    <main>
+        <section id="aboutSection">
+            <h2><img src="images/point.svg" alt="point">About Me</h2>
+            <p>
+                <span>Hi I'm Denfer Jericho Abad,</span>
+                <span>Front-End Developer</span>
+            </p>
+            <p>
+                <span>College BSIT Student. Creating Simple & Innovative Websites.</span>
+                <span><img src="images/location.svg" alt="">Daet Camarines Norte, Philippines.</span>
+                <span><img src="images/experience.svg" alt="">Experience 404 not found.</span>
+            </p>
+        </section>
+
+        <section id="projectSection">
+            <h2><img src="images/point.svg" alt="point">Project</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th><a href="#"><img src="images/image.svg" alt="">Image</a></th>
+                        <th><a href=""><img src="images/name.svg" alt="name">Name</a></th>
+                        <th><a href=""><img src="images/description.svg" alt="description">Description</a></th>
+                        <th><a href=""><img src="images/tools.svg" alt="tools">Tools</a></th>
+                        <th><a href=""><img src="images/date.svg" alt="date">Year</a></th>
+                        <th><a href=""><img src="images/link.svg" alt="link">Link</a></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img src="images/csa.png" alt=""></td>
+                        <td>CSA</td>
+                        <td>Web-based Class Schedule and Appointment [Activities Management & Chat].</td>
+                        <td>HTML, CSS, Javascript, PHP & MySQL</td>
+                        <td>2024</td>
+                        <td><a href="https://denden0121.freewebhostmost.com/" target="_blank">Click me</a></td>
+                    </tr>
+                    <tr>
+                        <td><img src="images/portfolio.PNG" alt=""></td>
+                        <td>Portfolio</td>
+                        <td>Website that showcase my skills, projects and things about me.</td>
+                        <td>React & Tailwind</td>
+                        <td>2025</td>
+                        <td><a href="https://denden.freewebhostmost.com/" target="_blank">Click me</a></td>
+                    </tr>
+                    <tr>
+                        <td><img src="images/ecommerce.png" alt=""></td>
+                        <td>Ecommerce</td>
+                        <td>Figma Prototype of an ecommerce website for demonstration.</td>
+                        <td>Figma</td>
+                        <td>2024</td>
+                        <td>
+                            <a href="https://www.figma.com/proto/KOqUfkc8rr9EemU72X0Mon/Untitled?node-id=1-170&p=f&t=29Gz1jCGu55h2uHb-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A170&show-proto-sidebar=1" target="_blank">Click me</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="contactSection">
+            <h2><img src="images/point.svg" alt="point">Contact Me</h2>
+            <form action="submitContact.php" method="POST">
+                <fieldset>
+                    <legend>Enter Details</legend>
+                    <label for="fullName">Name <input type="text" name="fullName" id="fullName"></label>
+                    <label for="email">Email <input type="email" name="email" id="email"></label>
+                </fieldset>
+                <fieldset>
+                    <legend>How did you hear about this portfolio?</legend>
+                    <label for="friend"><input type="radio" name="options" id="friend">Friend</label>
+                    <label for="socialMedia"><input type="radio" name="options" id="socialMedia">Social Media</label>
+                    <label for="searchEngine"><input type="radio" name="options" id="searchEngine">Search Engine</label>
+                    <label for="other"><input type="radio" name="options" id="other">Other</label>
+                </fieldset>
+                <fieldset>
+                    <legend>Skills/Interests</legend>
+                    <label for="webDevelopment"><input type="checkbox" name="webDevelopment" id="webDevelopment">Web Development</label>
+                    <label for="design"><input type="checkbox" name="design" id="design">Design</label>
+                    <label for="photography"><input type="checkbox" name="photography" id="photography">Photography</label>
+                </fieldset>
+                <fieldset>
+                    <legend>Additional Feedback</legend>
+                    <textarea name="feedBack" id="feedBack" placeholder="Addional Feedback..." rows="7"
+                        cols="20"></textarea>
+                </fieldset>
+                <input type="submit" name="submit" id="submit" value="Submit">
+            </form>
+        </section>
+    </main>
+
+    <footer id="footerSection">
+        <p>© Denfer Jericho Abad 2025</p>
+    </footer>
+
+</body>
+
+</html>

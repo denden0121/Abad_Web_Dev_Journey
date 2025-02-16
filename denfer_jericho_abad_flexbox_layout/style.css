@@ -1,0 +1,43 @@
+body {
+    width: 1200px;
+    margin: 0 auto;
+    padding-block: 24px;
+  }
+  
+  header {
+    background-color: #ffcc00;
+    height: 150px;
+  }
+
+  /* 
+
+    I tried different ways on solving this excercise, and I like the idea of just changing 
+    the justify-content to space-between to put the items on the other side and just add 
+    margin-block to add space between the main the header and footer.
+
+  */
+
+  main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-block: 24px;
+  }
+
+  aside {
+    background-color: #9b59b6;
+    height: 300px;
+    width: 300px;
+  }
+  
+  section {
+    background-color: #1abc9c;
+    height: 300px;
+    width: 876px;
+  }
+  
+  footer {
+    background-color: #e74c3c;
+    height: 100px;
+  }
