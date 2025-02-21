@@ -1,0 +1,4 @@
+Name: Denfer Jericho Abad
+Username: denden0121
+Github Repository: https://github.com/denden0121/Abad_Web_Dev_Journey/
+GitHub Think in boxes: https://github.com/denden0121/Abad_Web_Dev_Journey/tree/5097f98581d0eaa49cb60f468a013f1edabbdbd3/Think_in_Boxes
