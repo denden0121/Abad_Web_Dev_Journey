@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>My First Bootstrap Website</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<nav class="z-3 position-fixed w-100 navbar bg-dark shadow-sm">
+		<div class="container-fluid row-cols-auto">
+			<a class="col-md-3 navbar-brand" href="#">
+				<img class="shadow-sm" src="images/logo_denzone.png" alt="">
+			</a>
+			<ul class="nav col-md-3">
+				<li class="nav-item"><a class="nav-link active text-light" href="#get-started">About</a></li>
+				<li class="nav-item"><a class="nav-link text-light" href="#project">Project</a></li>
+				<li class="nav-item"><a class="nav-link text-light" href="#contact">Contact</a></li>
+			</ul>
+		</div>
+	</nav>
+
+	<main class="container-fluid h-75 row-cols-auto p-0">
+		<div id="get-started" class="container-fluid bg-dark d-flex flex-column justify-content-center align-items-center gap-4">
+			<h1 class="text-center text-light">Simple website created using Bootstrap</h1>
+			<p class="text-center text-light-emphasis">This website will showcase some of the activities I've created. I tried to replicate this layout from random image at Google :&#41;</p>
+			<div class="w-25 d-flex flex-row justify-content-center align-items-center gap-4">
+				<a href="#project" class=" shadow btn bg-primary text-light">Get Started</a>
+				<a href="#contact" class=" shadow btn border-1 border-light text-light">Learn More</a>
+			</div>
+		</div>
+		<div id="project" class="container-fluid bg-body-tertiary d-flex flex-row justify-content-center align-items-center gap-5">
+			<div class="shadow rounded-5 row">
+				<div class="col">
+					<img class="" src="images/csa.png" alt="csa">
+				</div>
+				<div class="col d-flex flex-column justify-content-start align-items-start gap-4 py-4">
+					<h2 class="text-dark">Capstone Project</h2>
+					<p class="text-dark-emphasis">Web-based Class Schedule and Appointment [Activities Management & Chat].</p>
+					<a class="" href="#">Explore more....</a>
+				</div>
+			</div>
+			<div class="shadow rounded-5 row">
+				<div class="col py-3">
+					<img class="" src="images/portfolio.PNG" alt="csa">
+				</div>
+				<div class="col d-flex flex-column justify-content-start align-items-start gap-4 py-4">
+					<h2 class="text-dark">Portfolio</h2>
+					<p class="text-dark-emphasis">Web-based Class Schedule and Appointment [Activities Management & Chat].</p>
+					<a class="" href="#">Explore more....</a>
+				</div>
+			</div>
+			<div class="shadow rounded-5 row">
+				<div class="col py-3">
+					<img class="" src="images/ecommerce.png" alt="csa">
+				</div>
+				<div class="col d-flex flex-column justify-content-start align-items-start gap-4 py-4">
+					<h2 class="text-dark">Ecommerce</h2>
+					<p class="text-dark-emphasis">Figma Prototype of an ecommerce website for demonstration.</p>
+					<a class="" href="#">Explore more....</a>
+				</div>
+			</div>
+		</div>
+		<div id="contact" class="bg-dark container-fluid d-flex flex-column justify-content-center align-items-center gap-4">
+			<h2 class="text-light">Contact Me</h2>
+			<div class="contact w-50 d-flex flex-row justify-content-around align-items-center">
+				<a class="d-flex flex-column align-items-center text-decoration-none" href="#"><img class="shadow" src="images/icon-discord.png" alt="">Discord</a>
+				<a class="d-flex flex-column align-items-center text-decoration-none" href="#"><img class="shadow" src="images/icon-github.png" alt="">Github</a>
+				<a class="d-flex flex-column align-items-center text-decoration-none" href="#"><img class="shadow" src="images/icon-contact.png" alt="">Phone</a>
+			</div>
+			<form class="w-50 d-flex flex-column justify-content-center align-items-center gap-4 p-4 shadow" action="" method="POST">
+				<input type="email" name="email" placeholder="email">
+				<input type="text" name="name" placeholder="name">
+				<textarea name="message" id="message" placeholder="message..."></textarea>
+				<input class="btn bg-primary text-light" type="submit" name="submit">
+			</form>
+		</div>
+
+	</main>
+</body>
+
+</html>
