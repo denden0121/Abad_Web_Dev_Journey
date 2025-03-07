@@ -1255,20 +1255,140 @@
 //         alert(`You have $${balance}!`);
 //     }
 // })
-//______________________________________________________________________
+//*************************************************************************************************************************
 
 
-document.getElementById("container").addEventListener("click", function() {
-    alert("You clicked the container!");
+// //Array Methods
+// const characters = [
+//     {
+//         name: "Zeus",
+//         gender: "Male",
+//         hp: 90,
+//         strength: 99,
+//         weapon: "Lighting"
+//     },
+//     {
+//         name: "Thor",
+//         gender: "Male",
+//         hp: 100,
+//         strength: 89,
+//         weapon: "Hammer"
+//     },
+//     {
+//         name: "Athena",
+//         gender: "Female",
+//         hp: 10,
+//         strength: 10,
+//         weapon: "Beauty"
+//     }
+// ]
 
-    // "this" refers to the element that triggered the event (in this case, 				#container)
-    this.style.backgroundColor = "lightgray"; 
-});
+// // console.log(characters)
 
-document.querySelectorAll(".color-box").forEach(button => {
-    button.addEventListener("click", function(event) {
-        event.stopPropagation(); // Uncomment this to see the difference
-        document.getElementById("container").style.backgroundColor = this.style.backgroundColor;
-        alert("You clicked the " + this.textContent + " button!");
-    });
-});
+// //Filter Method -> immutable -> find a specific data and return new array **********************************************************************************************
+// const damageOver50 = characters.filter( (character) => {
+//     return character.strength > 50;
+// })
+// const femaleCharacter = characters.filter((character) => {
+//     return character.gender == "Female";
+// })
+
+
+// //Map Method -> immutable -> iterate between all the elements, transform and return new array ************************************************************************************
+// const characterNames = characters.map((character)=>{
+//     return character.name;
+// })
+// //can return array of objects
+// const characterNameGender = characters.map((character)=>(
+//     {
+//         name: character.name,
+//         gender: character.gender,
+//     }
+// ));
+// //can do some calculations and modifications
+// const characterUpgradedStrength = characters.map((character)=>(
+//     {
+//         name: character.name,
+//         strength: character.strength * 2,
+//     }
+// ));
+// //can concat strings
+// const characterNameWeapon = characters.map((character)=>(
+//     {
+//         combination: character.name + " " + character.weapon,
+//     }
+// ))
+
+// //Some Method -> atleast is true. Returns true or false ******************************************************************************************************************************
+// const oneMale = characters.some((character)=>{
+//     return character.gender == "Male"
+// })
+// const damageLessthan10 = characters.some((character)=>{
+//     return character.strength < 10;
+// })
+
+// //Sort Method -> if return is negative: a then b, if positive: b then a
+// /**
+//  * (a, b) => {return comparisonValue}
+//  * negative (comparisonValue < 0)
+//  * positive (comparisonValue > 0)
+//  * zero (comparisonValue === 0)
+//  * 
+//  */
+// //can sort descending or ascending
+// const sortStrength = characters.sort((a, b)=>{
+//     return a.strength - b.strength
+// })
+// //sort name string
+// const sortName = characters.sort((a,b)=>{
+//     if(a.name < b.name) return -1;
+//     return 1;
+// })
+// //sort by boolean or gender
+// const sortGender = characters.sort((a,b)=>{
+//     if(a.gender == "Female") return -1;
+//     return 1;
+// })
+
+// //Reduce Method -> iterate each one and return a new, using accumulator ******************************************************************************************************************************
+// //this return totalHealth by adding accumulator to current values
+// const totalHealth = characters.reduce((acc, curr)=>{
+//     return acc + curr.hp;
+// }, 0)
+// //can return array
+// const characterGenderCount = characters.reduce((acc, curr)=>{
+//     if(curr.gender == "Male"){
+//         acc[0]++;
+//     }else{
+//         acc[1]++;
+//     }
+//     return acc;
+// },[0,0])
+// const students = [
+//     { name: 'Alice', score: 92 },
+//     { name: 'Bob', score: 73 },
+//     { name: 'Charlie', score: 92 },
+//     { name: 'David', score: 69 },
+//     { name: 'Eva', score: 88 }
+// ];
+// //i can also return from what i want to do for example return the number of passed
+// const studentsScore = students.reduce((acc, curr)=>{
+//     if(curr.score >= 75){
+//         acc.pass++;
+//     }else{
+//         acc.failed++;
+//     }
+//     return acc;
+// },{
+//     pass: 0,
+//     failed: 0
+// })
+
+// //Every Method -> check and all condition must be true -> return true or false based on condition ******************************************************************************************************************************
+// const everyMale = characters.every((character)=>{
+//     return character.gender == "Male";
+// })
+
+// console.log(everyMale)
+//*************************************************************************************************************************************************************************************************** */
+
